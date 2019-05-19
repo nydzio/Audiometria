@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nyderek.dawid.audiometria">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ear_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ear_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ExaminationChoice" />
+        <activity android:name=".ExaminationHistory" />
+        <activity android:name=".ToneExam" />
+        <activity android:name=".ExamResult" />
+        <activity android:name=".SpeechExam"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpeechExam">
+
+
+    <Button
+        android:id="@+id/startExamButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical"
+        android:text="Rozpocznij badanie"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/playButton"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Odtwórz ponownie"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/option1Button"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/option2Button"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startExamButton" />
+
+    <Button
+        android:id="@+id/option2Button"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    <Button
+        android:id="@+id/option3Button"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option4Button"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option2Button"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <Button
+        android:id="@+id/option4Button"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option2Button"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Audiometria mowy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
